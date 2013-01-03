@@ -1,0 +1,160 @@
+@import "../fonts/fonts.css";
+
+* {
+margin: 0;
+padding: 0;
+ }
+
+//colors 
+
+@beige: #F8E9B9;
+@dark_brown: #231815;
+@brown: #35251F;
+@red: #CC333F;
+@orange: #EB6841;
+@yellow: #EDC951;
+@blue: #00A0B0;
+
+@background: url('../img/background.png');
+
+// fonts
+
+@bebas_neue: 'BebasNeueRegular';
+@museo_regular: 'museo_slab_500regular';
+@museo_italic: 'museo_slab_500italic';
+
+
+// rounded corners
+
+.rounded_corners(@radius: 5px){
+  -webkit-border-radius: @radius;
+   -khtml-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+
+
+body {
+background: url('../img/background.png');
+font-family: @museo_regular;
+}
+
+nav,h1 {
+color: @dark_brown;
+font-family: @bebas_neue;
+font-weight: 100;
+}
+
+h1#schriftzug{
+font-size: 3.0em;
+padding-top: 0.2em;
+margin-left: 60px;
+}
+
+p {
+font-family: @museo_regular;
+}
+
+.accordion a {
+font-family: @museo_regular;
+color: @beige;
+}
+
+.accordion{
+font-size: 1.2em;
+font-weight: 100;
+}
+
+.accordion-heading{
+background-color: @dark_brown;
+}
+
+.accordion-inner {
+padding: 0;
+padding-top: 10px;
+}
+
+.left{
+float:left;
+}
+
+.right{
+float:right;
+}
+
+#logo{
+.left;
+}
+
+.arrow{
+.right;
+padding-top:0.25em;
+padding-right: 1em;
+}
+
+
+
+//formular
+
+
+::-webkit-input-placeholder  {  
+font-family: @bebas_neue !important; 
+color: #000;
+}
+
+input:-moz-placeholder {  
+font-family: @bebas_neue !important; 
+color: #000;
+font-size: 1.5em;
+}
+
+
+input[type="text"]{
+.rounded_corners;
+}
+
+.form_border(@color: #fff){
+border-top: 5px solid @color;
+}
+
+input[type="text"].form_blue, input[type="password"].form_blue{
+.form_border(@blue);
+}
+
+input[type="text"].form_orange, input[type="password"].form_orange{
+.form_border(@orange);
+}
+
+input[type="text"].form_gelb{
+.form_border(@yellow);
+}
+
+input[type="password"].form_red{
+.form_border(@red);
+}
+
+#login input:not([type=submit]){
+padding: 0.4em 0.6em;
+padding-top: 0.9em;
+}
+
+#login input{
+width: 85%;
+margin-left:2%;
+margin-right: 2%;
+font-size: 1.5em !important;
+}
+
+.button_login{
+.rounded_corners;
+background-color: @dark_brown;
+color: @beige;
+font-family:@bebas_neue;
+
+}
+
+
+
+
+
