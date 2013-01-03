@@ -101,12 +101,15 @@ padding-right: 1em;
 ::-webkit-input-placeholder  {  
 font-family: @bebas_neue !important; 
 color: #000;
+padding-top: 0.3em;
+font-size: 1.2em;
 }
 
 input:-moz-placeholder {  
 font-family: @bebas_neue !important; 
 color: #000;
-font-size: 1.5em;
+font-size: 1.2em;
+padding-top: 0.3em;
 }
 
 
@@ -135,15 +138,23 @@ input[type="password"].form_red{
 }
 
 #login input:not([type=submit]){
-/*padding: 0.4em 0.6em;
-padding-top: 0.9em;*/
+padding: 0.8em 0.7em 0.5em 0.7em;
+padding-top: 0.3em;
+width:83%;
+margin-left:3%;
+margin-right: 3%;
 }
 
 #login input{
-width: 85%;
-margin-left:2%;
-margin-right: 2%;
-font-size: 1.5em !important;
+font-size: 1.3em !important;
+
+}
+
+#login input[type="submit"]{
+padding: 0.5em;
+width:94%;
+margin-left:3%;
+margin-right: 3%;
 }
 
 .button_login{
